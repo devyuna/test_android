@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:weightSum="1">
+    <!-- android:orientation="vertical" -->
+
+    <!-- px = dp * 단말 DPI / 기본 160 -->
+    <!-- dp = px * 기본 160 / 단말 DPI -->
+<!--    <Button-->
+<!--        android:layout_width="411dp"-->
+<!--        android:layout_height="731dp"-->
+<!--        android:text="버튼1"-->
+<!--        android:textSize="50sp"-->
+<!--        android:textAllCaps="false"/>-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼1"
+        android:layout_weight="1"
+        android:onClick="Btn1Click"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼2"
+        android:id="@+id/Btn2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼3"
+        android:id="@+id/Btn3"
+        />
+
+</LinearLayout>
